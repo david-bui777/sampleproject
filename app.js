@@ -20,9 +20,9 @@ app.get('/', (req, res) => {
     res.render('home')
 })
 
-//app.use('/api', apiRouter)
+app.use('/api', apiRouter)
 
 app.listen(port, () =>{
-    console.log('App started on 8088...')
+    console.log(`App started on ${port}`)
 })
 
